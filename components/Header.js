@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSession, signIn, signOut } from 'next-auth/react'
 
 function Header() {
   const { data: session } = useSession()
+
   return (
     <div className="top-0 z-50 flex items-center justify-between bg-transparent p-2 lg:p-10">
       <div className="flex items-center gap-2">
