@@ -49,7 +49,7 @@ export default function Home({ data }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await fetch(
     'https://sheet.best/api/sheets/43a8aacb-4f98-4325-9fc7-3d5d363c4f21'
   ).then((response) => response.json())
